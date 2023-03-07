@@ -14,8 +14,8 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
       unique: true,
-      match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, "Invalid email address"]
-      
+      match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, "This is not a valid email"]
+    
     },
     
     thoughts: [
@@ -41,8 +41,7 @@ const userSchema = new mongoose.Schema(
   }
 );
 
-
-userSchema.virtual('innerCount').get(function () {
+userSchema.virtual('friendsCount').get(function () {
   return this.friends.length;
 });
 
