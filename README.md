@@ -17,4 +17,4 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ### Screenshot of Insomnia
 
-![This is a screen shot of testing done in Insomnia.](./insinsomniascreenshot.png)
+![This is a screen shot of testing done in Insomnia.](./assets/insinsomniascreenshot.png)
